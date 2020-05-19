@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Card, CardImg, CardBody, CardTitle, CardText, Media } from 'reactstrap';
+import { Card, CardImg, CardBody, CardTitle, CardText, } from 'reactstrap';
 
 class DishDetail extends Component {
 
@@ -59,6 +59,7 @@ class DishDetail extends Component {
         const dish = this.props.dish;
 
         return (
+            <div className='container'>
             <div className='row'>
                 <div className='col-12 col-md-5 m-1'>
                     {this.renderDish(dish)}
@@ -66,6 +67,7 @@ class DishDetail extends Component {
                 <div className='col-12 col-md-5 m-1'>
                     {this.renderComment(dish)}
                 </div>
+            </div>
             </div>
         );
     }
